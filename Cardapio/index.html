@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <header>
+            <div class="container-image">
+                <img id="image-header" src="foods.jpg">
+            </div>
+            <h1 id="title">Menu - Faça a sua escolha</h1>
+        </header>
+
+        <div class="container-prato">
+            <h1>Prato Principal</h1>
+            <h2>Todos os pratos acompanham arroz, feijão e a sobremesa do dia</h2>
+            <div id="product" class="container-cards">
+                <div id="0" class="card">
+                    <img class="card-image" src="bifecombatata.jpg">
+                    <div class="card-atributos">
+                        <h1 class="product-name" id="pn">Bife com batata</h1>
+                        <h1 class="product-price">R$30,00</h1>
+                    </div>
+                    <div class="container-button">
+                        <button id="remPrato0" class="quant-button" type="button"
+                            onclick="remItem('quantItem0', 0)">-</button>
+                        <div id="quantItem0" class="quant-button quantValue">0</div>
+                        <button id="addPrato0" class="quant-button" onclick="addItem('quantItem0', 0)">+</button>
+                    </div>
+                </div>
+                <div id="1" class="card">
+                    <img class="card-image" src="frango.jpg">
+                    <div class="card-atributos">
+                        <h1 class="product-name">Coxa de frango crocante</h1>
+                        <h1 class="product-price">R$25,00</h1>
+                    </div>
+                    <div class="container-button">
+                        <button id="remPrato1" class="quant-button" type="button"
+                            onclick="remItem('quantItem1', 1)">-</button>
+                        <div id="quantItem1" class="quant-button quantValue">0</div>
+                        <button id="addPrato1" class="quant-button" onclick="addItem('quantItem1', 1)">+</button>
+                    </div>
+                </div>
+                <div id="2" class="card">
+                    <img class="card-image" src="carnedepanela.jpg">
+                    <div class="card-atributos">
+                        <h1 class="product-name">Carne de panela</h1>
+                        <h1 class="product-price">R$22,00</h1>
+                    </div>
+                    <div class="container-button">
+                        <button id="remPrato2" class="quant-button" type="button"
+                            onclick="remItem('quantItem2', 2)">-</button>
+                        <div id="quantItem2" class="quant-button quantValue">0</div>
+                        <button id="addPrato2" class="quant-button" onclick="addItem('quantItem2', 2)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-prato">
+            <h1>Acompanhamento</h1>
+            <h2>Porções para uma pessoa</h2>
+            <div class="container-cards">
+                <div class="card">
+                    <img class="card-image" src="farofa.jpg">
+                    <div class="card-atributos">
+                        <h1 class="product-name">Farofa</h1>
+                        <h1 class="product-price">R$10,00</h1>
+                    </div>
+                    <div class="container-button">
+                        <button id="remPrato3" class="quant-button" type="button"
+                            onclick="remItem('quantItem3', 3)">-</button>
+                        <div id="quantItem3" class="quant-button quantValue">0</div>
+                        <button id="addPrato3" class="quant-button" onclick="addItem('quantItem3', 3)">+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="salad.jpg">
+                    <div class="card-atributos">
+                        <h1 class="product-name">Salada</h1>
+                        <h1 class="product-price">R$8,00</h1>
+                    </div>
+                    <div class="container-button">
+                        <button id="remPrato4" class="quant-button" type="button"
+                            onclick="remItem('quantItem4', 4)">-</button>
+                        <div id="quantItem4" class="quant-button quantValue">0</div>
+                        <button id="addPrato4" class="quant-button" onclick="addItem('quantItem4', 4)">+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="torresmo.jpg">
+                    <div class="card-atributos">
+                        <h1 class="product-name">Torresmo</h1>
+                        <h1 class="product-price">R$12,00</h1>
+                    </div>
+                    <div class="container-button">
+                        <button id="remPrato5" class="quant-button" type="button"
+                            onclick="remItem('quantItem5', 5)">-</button>
+                        <div id="quantItem5" class="quant-button quantValue">0</div>
+                        <button id="addPrato5" class="quant-button" onclick="addItem('quantItem5', 5)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-prato">
+            <h1>Dados Pessoais</h1>
+            <form onsubmit="somarCarrinho()" action="#">
+                <div class="form-floating mb-3">
+                    <input required type="text" class="form-control" id="floatingInputName" placeholder="name">
+                    <label for="floatingInput" id="name">Digite seu nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input required type="text" class="form-control" id="floatingInputTelphone" placeholder="Cellphone">
+                    <label for="floatingInput" id="tel">Digite seu telefone</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input required type="email" class="form-control" id="floatingInputEmail"
+                        placeholder="name@example.com">
+                    <label for="floatingInput" id="email">Digite seu email</label>
+                </div>
+        </div>
+        <div class="button-container">
+            <input class="button" type="submit"></input>
+        </div>
+        </form>
+    </div>
+    <div class="result-container" id="rc">
+        <div class="conteudo-container">
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.green-light{
+    background-color: #5A8A68;
+}
+.green-dark{
+    background-color: #506957;
+} 
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-lamp-on{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.hidden{
+    visibility: hidden;
+}
+.container-lamp-off{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin-top: 45px;
+    
+}
+.visible{
+    visibility: visible;
+}
+.container-lamp-off #lamp-status{
+    margin-top: 285px;
+} 
+.lamp{
+    position: relative;
+    align-self: center;
+    width: 200px;
+}
+img{
+    cursor: pointer;
+}
+#shadow{
+    cursor:pointer;
+    position: absolute;
+    align-self: center;
+    margin-top: 30px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255, 234, 121, 0.31);
+}
+.shadow-light{
+    position: absolute;
+    width: 686px;
+    height: 109px;
+    left: 600px;
+    top: 600px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(243, 221, 145, 0.33) 0%, rgba(251, 238, 193, 0) 100%);
+}
+.shadow-dark{
+        position: absolute;
+        width: 686px;
+        height: 109px;
+        left: 600px;
+        top: 600px;
+        
+background: radial-gradient(50% 50% at 50% 50%, rgba(66, 87, 68, 0.235) 0%, rgba(40, 62, 42, 0.175) 50.52%, rgba(86, 111, 93, 0) 100%);
+}
+h1{
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    font-size: 30px;
+}
+#lamp-status{
+    margin-top: 280px;
+} 
+.advice{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom:0px;
+    padding: 20px;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+#atention{
+    font-size: 50px;
+}
+.button{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.interruptor-btn{
+    width: 80px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 5px;
+}
+.interruptor-circle{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #5A8A68;
+    border-radius: 50%;
+    background-color: #5A8A68;
+    cursor: pointer;
+}
+.on{
+    margin-right: 80%;
+    transition: .4s;
+}
+
+.off{
+    margin-left: 35px;
+    transition: .4s;
+} 

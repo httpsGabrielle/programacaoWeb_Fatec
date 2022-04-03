@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <title>Luz</title>
+</head>
+<body id="background" class="green-light">
+        <div class="container-main">
+            <div class="container-lamp" onclick="changeLights()">
+                <div id="lightbulb" class="container-lamp-on">
+                    <img class="lamp" id="On" src="LuzAcesa.png">
+                    <i id="shadow"></i>
+                    <h1 id="lamp-status">A luz está acesa</h1>
+                    <div id="shadow-floor" class="shadow-light"></div>
+                </div>
+            </div>
+            <div class="container-lamp" onclick="changeLights()">
+                <div id="lightbulboff" class="container-lamp-off hidden">
+                    <div id="shadow-floor" class="shadow-dark"></div>
+                    <img src="LuzApagada.png">
+                    <h1 id="lamp-status">A luz está apagada</h1>
+                </div> 
+            </div>
+            <div class="button">
+                <div class="interruptor-btn">
+                    <button type="button" onclick="changeLights()" id="change-lightbulb" class="interruptor-circle on">
+                    </button>
+                </div>
+                <script src="script.js"></script>
+            </div>
+        </div>
+        <div class="advice">
+            <i class="material-icons-round" id="atention">report_problem</i>
+                <h2>Clique na lampada ou no <br> botão para acender</h2>
+        </div>
+</body>
+</html>
