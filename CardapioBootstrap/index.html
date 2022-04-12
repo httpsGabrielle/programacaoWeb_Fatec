@@ -208,21 +208,25 @@
               <input required type="text" class="form-control" id="floatingInputName" placeholder="name">
               <label for="floatingInput" id="name">Digite seu nome</label>
             </div>
-            <div class="form-floating mb-3">
-              <input required type="text" class="form-control" id="floatingInputTelphone" placeholder="Cellphone">
-              <label for="floatingInput" id="tel">Digite seu telefone</label>
-            </div>
-              <div class="form-floating mb-3">
-                <input required type="email" class="form-control" id="floatingInputEmail"
-                placeholder="name@example.com">
-                <label for="floatingInput" id="email">Digite seu email</label>
+            <div class="row">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input required type="text" class="form-control" id="floatingInputTelphone" placeholder="Cellphone">
+                  <label for="floatingInput" id="tel">Digite seu telefone</label>
+                </div>
               </div>
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input required type="email" class="form-control" id="floatingInputEmail"
+                  placeholder="name@example.com">
+                  <label for="floatingInput" id="email">Digite seu email</label>
+                </div>
+              </div>
+            </div>
             <div class="button-container">
             <input class="btn btn-primary button" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"></input>
             </div>
         </form>
-
-        
     </div>
 
     <!-- Modal -->
@@ -236,6 +240,7 @@
           <div class="modal-body">
             <div class="result-container" id="rc">
               <div class="conteudo-container">
+                <p id="error">Insira seu cadastro</p>
                 <p id="result-text"></p>
               </div>
             </div>

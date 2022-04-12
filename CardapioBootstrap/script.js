@@ -1,4 +1,3 @@
-
 var pratos = []
 var precos = []
 var carrinho = []
@@ -57,10 +56,12 @@ function somarCarrinho(){
     }
     }
     if(valorFinal[0] == null){
+        $('#error').hide()
         document.getElementById("result-text").style.color = 'red';
         document.getElementById("result-text").innerHTML = `Selecione pelo menos um prato`
         return
     }else{
+        $('#error').hide()
         document.getElementById("result-text").style.color = 'black';
         document.getElementById("rc").style.height = "500px"
         document.getElementById("result-text").innerHTML = `Caro <b>${name}</b><br><br>Seguem os dados do seu pedido<br><br>O seu pedido é:<br><ul>`
